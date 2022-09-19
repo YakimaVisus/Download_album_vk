@@ -38,10 +38,6 @@ def main():
 
         id_albom = yakimavisus.split('_')[-1]
         id_user = yakimavisus.split('_')[0]
-        
-        # начинаем перебирать каждого пользователя
-    
-        # создаем директорию с именем пользователя, если нет
         newpath = os.path.join(sys.path[0], id_user)
         if not os.path.exists(newpath):
             os.makedirs(newpath)
